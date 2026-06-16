@@ -1,97 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    background:#f4f4f4;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-}
-
-.login-container{
-    background:white;
-    padding:30px;
-    width:350px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
-}
-
-h2{
-    text-align:center;
-    margin-bottom:20px;
-}
-
-input[type="email"],
-input[type="password"]{
-    width:100%;
-    padding:10px;
-    margin:8px 0;
-    border:1px solid #ccc;
-    border-radius:5px;
-}
-
-.login-btn{
-    display:block;
-    width:100%;
-    text-align:center;
-    background:#007bff;
-    color:white;
-    padding:10px;
-    border-radius:5px;
-    cursor:pointer;
-    margin-top:15px;
-}
-
-.login-btn:hover{
-    background:#0056b3;
-}
-
-#login-check{
-    display:none;
-}
-
-.status{
-    display:none;
-    text-align:center;
-    color:green;
-    font-weight:bold;
-    margin-top:15px;
-}
-
-#login-check:checked ~ .status{
-    display:block;
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="login-container">
-    <h2>User Login</h2>
+    <div class="login-container">
+        <h2>User Login</h2>
 
-    <input type="email" placeholder="Enter Email">
-    <input type="password" placeholder="Enter Password">
+        <input type="email" placeholder="Enter Email">
+        <input type="password" placeholder="Enter Password">
 
-    <input type="checkbox" id="login-check">
+        <input type="checkbox" id="login-check">
 
-    <label for="login-check" class="login-btn">
-        Login
-    </label>
+        <label for="login-check" class="login-btn">
+            Login
+        </label>
 
-    <p class="status">✅ Logged in Successfully!</p>
-</div>
+        <p class="status">✅ Logged in Successfully!</p>
+    </div>
 
 </body>
 </html>
